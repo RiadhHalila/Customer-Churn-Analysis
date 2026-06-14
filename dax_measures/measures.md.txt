@@ -1,0 +1,3 @@
+Churn Rate = DIVIDE([Churned Customers],[Total Customers],0)
+Churned Customers = CALCULATE([Total Customers],Dim_Churn[Churn Label]="Yes")
+Total Customers = DISTINCTCOUNT(Fact_Subscriptions[Customer ID])
